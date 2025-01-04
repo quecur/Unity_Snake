@@ -22,7 +22,8 @@ Al iniciar la aplicación, el usuario es recibido por una pantalla que contiene 
 Jugar: Inicia el juego. Cuando se selecciona esta opción, el método Jugar() se ejecuta. Este método utiliza SceneManager.LoadScene() para cargar la siguiente escena en la lista de construcción del proyecto.
 Salir: Cierra la aplicación. Si se selecciona esta opción, se llama al método Salir(), ejecutando Application.Quit() para cerrar la aplicación.
 
-![0 2025 01 04 A Las 18.54.00](../0%202025-01-04%20a%20las%2018.54.00.png)
+![image](https://github.com/user-attachments/assets/a5af2fc6-ee8b-4bf6-81f9-cdfb839d976a)
+
 
 
 # 3. Desarrollo del movimiento de cámara y seguimiento de la serpiente:
@@ -47,10 +48,15 @@ Se genera un nuevo segmento de la serpiente mediante la coroutine AddCubeToSnake
 Calcula la posición detrás del último segmento basado en la dirección de movimiento.
 Instancia una nueva esfera, lo asocia a la lista de segmentos de la serpiente y lo agrega al juego.
 
+![image](https://github.com/user-attachments/assets/ca81648c-a539-4893-8866-f11a686b3be0)
+
 - Objetos Tóxicos y Reducción de Tamaño:
 Cuando la serpiente colisiona con un objeto etiquetado como "toxic":
 El objeto tóxico se destruye.
 La serpiente pierde tres esferas del cuerpo mediante la función RemoveCubesFromSnake. Esta función  destruye visualmente del escenario parte del cuerpo de la serpiente.
+La serpiente pierde si choca contra un barril rojo.
+
+![image](https://github.com/user-attachments/assets/57f0119a-b76b-4ee7-8c7f-585a04ccc60b)
 
 - Movimiento y Seguimiento del Cuerpo:
 El movimiento de la serpiente se define en los ejes X y Z y es controlado por las flechas del teclado:
@@ -77,7 +83,8 @@ La posibilidad de perder segmentos o el juego añade un elemento de riesgo y rec
 El crecimiento de la serpiente dificulta el control, incrementando la complejidad a medida que avanza el jugador, ya que si se choca con su cuerpo pierde.
 
 
-![0 2025 01 04 A Las 19.35.44](../0%202025-01-04%20a%20las%2019.35.44.png)
+![image](https://github.com/user-attachments/assets/05abe889-add9-4d3d-b881-18d7b7bb6ca2)
+
 
 
 
